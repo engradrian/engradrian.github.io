@@ -426,6 +426,7 @@ h100 {
 .container-sample {
     background-color: #696969;
 }
+
 .work-sample{
     border-radius: 10px;
     position: relative;
@@ -500,7 +501,15 @@ h100 {
 .work:nth-child(2) {
     animation-delay: 1s;
   }
-
+.box:nth-child(1) {
+    animation-delay: 0.75s;
+}
+.box:nth-child(2) {
+    animation-delay: 1s;
+}
+.box:nth-child(3) {
+    animation-delay: 1.25;
+}
 /*-----------------------------SKILLS ICON-------------------------*/
 .card{
     height: 500px;
@@ -560,4 +569,16 @@ h100 {
 
 .wrapper .icon .img {
     height: 20px;
+}
+
+.contents {
+    margin-top: 60px;
+}
+
+.contents2 {
+    margin-top: 35px;
+}
+
+.contents3 {
+    margin-top: 120px;
 }
