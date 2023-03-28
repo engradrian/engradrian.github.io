@@ -34,7 +34,9 @@
             <div class="content">
                 <h4>Hello, my name is</h4>
                 <h1>James Adrian <span>Merano</span></h1>
-                <h3>Construction & Software Engineer</h3>
+                <div class="container-animation">
+                    <h7 class="text-animation">Construction Engineer</h7>
+                </div>
 
             </div>
         </div>
@@ -50,6 +52,7 @@
                     </div>
                 </div>
             </section>
+            
         <!----service section start------->
         <div id="service" class="service">
             <div class="title">
@@ -88,7 +91,6 @@
                 </div>
             </div>
         </div>
-
 
         <!------------Portfolio---------------->
         <div id="skills" class="portfolio">
@@ -165,6 +167,46 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <!------------End of Contact---------------->
 
         <div class="contact-me">
@@ -188,6 +230,23 @@
                 })
                 .catch(error => console.error('Error!', error.message))
             })
+
+
+            const text = document.querySelector(".text-animation");
+
+            const textLoad = () => {
+                setTimeout(() => {
+                    text.textContent = "Construction Engineer";
+                }, 0);
+                setTimeout(() => {
+                    text.textContent = "Web Developer";
+                }, 4000);
+            }
+
+            textLoad();
+            setInterval(textLoad, 8000);
+
+            
         </script>
 
 

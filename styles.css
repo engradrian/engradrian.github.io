@@ -1,3 +1,11 @@
+@media screen and (max-width: 1200px) {
+    body {
+      background-position: center !important;
+      background-attachment: fixed !important;
+    }
+  }
+
+
 *{
     padding: 0;
     margin: 0;
@@ -5,7 +13,10 @@
     box-sizing: border-box;
 }
 body{
-    background-color: black;
+    background-color: red;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 .header{
     background-color: #18191A;
@@ -24,6 +35,7 @@ body{
     background-image: url(https://www.itl.cat/pngfile/big/314-3149321_itachi-hd-wallpapers-itachi-uchiha-wallpaper-phone.jpg);
     background-size: cover;
     background-position: center;
+    
 }
 nav{
     display: flex;
@@ -143,7 +155,7 @@ h4{
     width: 550px;
 }
 .main{
-    width: 1130px;
+    width: 100%;
     max-width: 95%;
     margin: 0 auto;
     display: flex;
@@ -261,96 +273,7 @@ h5{
     margin-top: 120px;
 }
 
-/*-----------------------------portfolio-----------------------*/
-.portfolio{
-    background: #18191A;
-    width: 100%;
-    padding: 50px 0;
-}
-.portfolio h2{
-    color: white;
-    font-size: 75px;
-    width: 1130px;
-    margin: 30px auto;
-    text-align: center;
-}
-.work-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-}
-.work{
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
 
-}
-.work img{
-    width: 100%;
-    border-radius: 10px;
-    display: block;
-    height: 600px;
-    transform-origin: center center;
-    transition: transform 0.4s;
- }
-.layer{
-    width: 100%;
-    height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #FFD700);
-    border-radius: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    oveflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    text-align: center;
-    transition: height 0.4s;
-
-}
-.layer h6{
-    font-weight: 500;
-    margin-bottom: 20px;
-    color: white;
-    visibility: hidden;
-}
-.layer p{
-    color: white;
-    visibility: hidden;
-}
-.layer a{
-    margin-top: 20px;
-    color: black;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 60px;
-    background: #fff;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    text-align: center;
-    transition: 0.4s;
-}
-.work:hover img{
-    transform: scale(1.5);
-}
-.work:hover .layer{
-    height: 100%;
-}
-.work:hover .layer h6{
-    visibility: visible;
-}
-.work:hover .layer p{
-    visibility: visible;
-}
-.layer a:hover{
-    background: black;
-    color: #FFD700;
-}
 /*------------------- contact ------------------------------*/
 .contact{
     padding-top: 200px;
@@ -450,4 +373,151 @@ h100 {
 .span3{
     margin-top: -180px;
     display: block;
+}
+/*-----------------------------portfolio-----------------------*/
+.portfolio{
+    background: #18191A;
+    width: 100%;
+    padding: 50px 0;
+}
+.portfolio h2{
+    color: white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    width: 60%;
+    margin: auto;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    height: 400px;
+    transform-origin: center center;
+    transition: transform 0.4s;
+ }
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #FFD700);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    oveflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: height 0.4s;
+
+}
+.layer h6{
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: white;
+    visibility: hidden;
+}
+.layer p{
+    color: white;
+    visibility: hidden;
+}
+.layer a{
+    margin-top: 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    transition: 0.4s;
+}
+.work:hover img{
+    transform: scale(1.5);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.work:hover .layer h6{
+    visibility: visible;
+}
+.work:hover .layer p{
+    visibility: visible;
+}
+.layer a:hover{
+    background: black;
+    color: #FFD700;
+}
+
+.container-sample {
+    background-color: #696969;
+}
+.work-sample{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work-list-sample{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px
+}
+.work-sample img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    height: 650px;
+    transform-origin: center center;
+    transition: transform 0.4s;
+}
+
+
+
+.container-animation{
+
+}
+.container-animation .text-animation{
+    position: relative;
+    color:#FFD700;
+    font-size: 30px;
+}
+
+.text-animation:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 120%;
+    width: 100%;
+    background-color: black;
+    border-left: 2px solid white;
+    animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate {
+    40%, 60%{
+        left: calc(100% + 4px);
+    }
+    100% {
+        left: 0%
+    }
+    
 }
