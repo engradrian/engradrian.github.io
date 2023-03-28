@@ -208,28 +208,8 @@ h4{
     min-height: 400px;
     margin-right: 0;
 }
-.card{
-    height: 365px;
-    width: 335px;
-    padding: 20px 35px;
-    background: #18191A;
-    border-radius: 20px;
-    margin: 15px;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-    transition: transform 0.4s;
-}
-.card:hover{
-    transform: scale(1.1);
-}
-.card i{
-    font-size: 50px;
-    display: block;
-    text-align: center;
-    margin: 25px 0px;
-    color: #FFD700
-}
+
+
 h5{
     color: white;
     font-size: 23px;
@@ -241,22 +221,7 @@ h5{
     line-height: 27px;
     margin-bottom: 25px;
 }
-.card .button{
-    background-color: #FFD700;
-    color:black;
-    text-decoration: none;
-    border: 2px solid transparent;
-    font-weight: bold;
-    padding: 9px 22px;
-    border-radius: 30px;
-    transition: .4s;
-}
-.card .button:hover{
-    background-color: transparent;
-    border: 2px solid #FFD700;
-    cursor: pointer;
-    color: white;
-}
+
 .contact-me{
     width: 100%;
     height: 60px;
@@ -535,3 +500,64 @@ h100 {
 .work:nth-child(2) {
     animation-delay: 1s;
   }
+
+/*-----------------------------SKILLS ICON-------------------------*/
+.card{
+    height: 500px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #18191A;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.4s;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.wrapper .icon {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 0 5px;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-out;
+    overflow: hidden;
+    padding-top: 2px;
+    padding-left: 4px;
+}
+.wrapper .icon:hover{
+    width: 200px;
+    
+}
+.wrapper .icon .icon-name {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin-left: -10px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+}
+
+
+.wrapper .icon .icon-name i{
+    font-size: 25px;
+    line-height: 60px;
+    margin-top: -3px;
+    margin-left: 10px;
+}
+
+.wrapper .icon .img {
+    height: 20px;
+}
