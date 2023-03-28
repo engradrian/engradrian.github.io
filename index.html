@@ -43,7 +43,7 @@
         
             <!----About section start---->
             <section id="about" class="about">
-                <div class="main">
+                <div class="main hidden">
                     <img src="https://preview.redd.it/8bfw3gigvto31.png?width=640&crop=smart&auto=webp&s=2c85732284b1899a85ce2f0c6ee8bf359b3b603c">
                     <div class="about-text">
                         <h2>About Me</h2>
@@ -54,39 +54,27 @@
                 </div>
             </section>
         <!----service section start------->
-        <div id="service" class="service">
+        <div id="service" class="service hidden">
             <div class="title">
-                <h2>Services</h2>
+                <h2>Skills</h2>
             </div>
             <div class="box">
                 <div class="card">
-                    <i class="fa-solid fa-bars"></i>
-                    <h5>Web Development</h5>
+                    <h5>Programming Languages</h5>
                     <div class="pra">
-                        <p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible</p>
-                        <p style="text-align: center">
-                            <a class="button" href="/webpage">Read More</a>
-                        </p>
+                        
                     </div>
                 </div>
                 <div class="card">
-                    <i class="fa-solid fa-user"></i>
-                    <h5>Web Development</h5>
+                    <h5>Web development technologies</h5>
                     <div class="pra">
-                        <p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible</p>
-                        <p style="text-align: center">
-                            <a class="button" href="/webpage">Read More</a>
-                        </p>
+                        
                     </div>
                 </div>
                 <div class="card">
-                    <i class="fa-solid fa-bell"></i>
-                    <h5>Web Development</h5>
+                    <h5>Front-end libraries and tools</h5>
                     <div class="pra">
-                        <p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible</p>
-                        <p style="text-align: center">
-                            <a class="button" href="/webpage">Read More</a>
-                        </p>
+                        
                     </div>
                 </div>
             </div>
@@ -95,9 +83,9 @@
 
         <!------------Portfolio---------------->
         <div id="skills" class="portfolio">
-            <div class="container">
+            <div class="container hidden">
                 <h2 class="sub-title">My Work</h2>
-                <div class="work-list">
+                <div class="work-list ">
                     <div class="work">
                         <img class="image" src="search.JPG">
                         <div class="layer">
@@ -156,7 +144,7 @@
 
         
         <!------------Contact---------------->
-        <div id="contact" class="contact">
+        <div id="contact" class="contact hidden">
             <div class="container">
                 <div class="row">
                     <div class="contact-left">
@@ -236,7 +224,21 @@
             textLoad();
             setInterval(textLoad, 8000);
 
+            <!----------------- Scroll animation -------------------------------------->
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    console.log(entry)
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                    } else {
+                        entry.target.classList.remove('show');
+                    }
+                });
+            });
             
+            const hiddenElements = document.querySelectorAll('.hidden');
+            hiddenElements.forEach((el) => observer.observe(el));
+
         </script>
 
 
