@@ -226,6 +226,23 @@ h5{
     border: 2px solid #FFD700;
     color: white;
 }
+.btn3{
+    padding: 2px 13px;
+    background-color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    margin-left: auto;
+    border: 2px solid transparent;
+    color: black;
+    transition: .4s;
+    margin-top: -20px;
+}
+.btn3:hover{
+    background-color: black;
+    border: 2px solid #FFD700;
+    color: white;
+}
 .contact-right .button-three{
     display: inline-block;
     background-color: #FFD700;
@@ -566,7 +583,7 @@ h2 {
 .main-navbar a{
     margin-right: 25px;
     margin-left: 10px;
-    color: white;
+    color: rgb(55, 55, 55);
     font-size: 1.1rem;
     font-weight: 500;
     transition: all 0.5s ease;
@@ -587,6 +604,9 @@ h2 {
     .navbar-header{
         padding: 5px 0;
         margin: 0px 20px;
+    }
+    .btn3{
+        margin-top: 0;
     }
 }
 
