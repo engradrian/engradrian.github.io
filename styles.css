@@ -628,7 +628,7 @@ h2 {
         align-items: center;
 
         width: 150px;
-        height: 29vh;
+        height: 290px;
         box-shadow: 16px 14px 20px #0000008c;
         position: relative;
         overflow: hidden;
@@ -658,8 +658,8 @@ h2 {
     }
     .navbar-header::after{
         content: "";
-        width: 140px;
-        height: 28vh;
+        width: 145px;
+        height: 285px;
         background: #232323;
         position: absolute;
         border-radius: 10px;
@@ -681,7 +681,6 @@ h2 {
     }
     
 }
-
 
 @media (max-width: 900px) {
     h5{
