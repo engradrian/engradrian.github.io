@@ -79,7 +79,7 @@ h4{
 }
 .about img{
     height: 400px;
-    margin-right: 150px;
+    margin-right: 100px;
     width: auto;
 }
 .about-text{
@@ -688,5 +688,55 @@ h2 {
 @media (max-width: 900px) {
     h5{
         font-size: 1rem !important;
+    }
+}
+
+
+
+/*------------------- Image in about me animation -------------------------*/
+.myImage {
+    min-width: 273px;
+    height: 395px;
+    box-shadow: 16px 14px 20px #0000008c;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+}
+.myImage::before{
+    content: "";
+    background-image: conic-gradient(
+        #e8a52b 20deg,
+        transparent 120deg
+    );
+    width: 500%;
+    height: 500%;
+    position: absolute;
+    animation: imagerotate 2s linear infinite;
+}
+.myImage::after{
+    content: "";
+    width: 263px;
+    height: 385px;
+    background-image: url('Picture1.jpg');;
+    position: absolute;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffe75d;
+    font-size: larger;
+    letter-spacing: 5px;
+    box-shadow: inset 20px 20px 20px #0000008c;
+}
+@keyframes imagerotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
     }
 }
