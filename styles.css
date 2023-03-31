@@ -30,7 +30,7 @@ span{
 h1{
     color: white;
     margin: 20px 0px 20px;
-    font-size: 75px;
+    font-size: 70px;
 }
 h3{
     color: white;
@@ -421,7 +421,7 @@ h100 {
     left: 0;
     height: 150%;
     width: 100%;
-    background-color: black;
+    background-color: rgb(21, 17, 17);
     border-left: 2px solid white;
     animation: animate 4s steps(12) infinite;
 }
@@ -617,6 +617,13 @@ h2 {
     #menu-icon{
         display: block;
         margin-right: 20px;
+    }
+    h1{
+        font-size: 60px;
+    }
+    .container-animation .text-animation{
+        font-size: 25px;
+        
     }
     .navbar-header{
         position: absolute;
