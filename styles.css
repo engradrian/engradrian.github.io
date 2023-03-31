@@ -21,6 +21,11 @@ span{
     background-position: center;
     
 }
+.h8{
+    font-size: 25px;
+    color: white;
+    margin-bottom: 20px;
+}
 .content{
     top: 50%;
     left: 100%;
