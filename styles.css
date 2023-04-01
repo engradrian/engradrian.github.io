@@ -440,7 +440,9 @@ h100 {
     }
     
 }
-
+.contact-left p {
+    display: flex;
+}
 
 /*-----------------------------scroll animation-----------------------*/
 .hidden {
@@ -619,9 +621,21 @@ h2 {
 }
 
 @media (max-width: 1090px){
+    .main-navbar a{
+        height: 50px;
+        width: 100px;
+        padding: 10px 20px;
+    }
+    .logo{
+        font-size: 50px;
+    }
+    .header-all{
+        height: 100px;
+    }
     #menu-icon{
         display: block;
         margin-right: 20px;
+        font-size: 50px;
     }
     h1{
         font-size: 60px;
