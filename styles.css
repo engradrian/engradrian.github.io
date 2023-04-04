@@ -477,8 +477,8 @@ h100 {
 }
 /*-----------------------------SKILLS ICON-------------------------*/
 .card{
-    height: 500px;
-    width: 335px;
+    height: 400px;
+    width: 300px;
     padding: 20px 35px;
     background: #18191A;
     border-radius: 20px;
@@ -487,9 +487,7 @@ h100 {
     overflow: hidden;
     text-align: center;
     transition: transform 0.4s;
-
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
 }
 .card:hover{
@@ -537,15 +535,30 @@ h100 {
 }
 
 .contents {
-    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    position: relative;
 }
 
 .contents2 {
-    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    position: relative;
 }
 
 .contents3 {
-    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    position: relative;
 }
 
 /*------------------- RESPONSIVE NAVIGATION BAR -------------------------*/
