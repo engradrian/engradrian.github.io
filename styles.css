@@ -486,12 +486,16 @@ h100 {
     position: relative;
     overflow: hidden;
     text-align: center;
-    transition: transform 0.4s;
+    transition: all 0.4s;
     display: flex;
     align-items: center;
 }
 .card:hover{
     transform: scale(1.1);
+}
+.box:hover > .card:not(:hover) {
+    filter: blur(2px);
+    transform: scale(0.999);
 }
 .wrapper .icon {
     display: inline-block;
