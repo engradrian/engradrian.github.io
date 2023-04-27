@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <title>Take Home Assessment</title>
+    </head>
+    <body>
+        <main>
+        <div class="top">
+            <div class="topCard">
+                <div class="userIcon">
+                    
+                </div>
+                <div class="Username">
+                    <h7>Jacob</h7>
+                </div>
+                <div class="trophy">
+                    <i class="fa-solid fa-trophy"></i>
+                </div>
+                <div class="points">
+                    <h8>4999</h8>
+                </div>
+            </div>
+            <div class="topCard">
+                <div class="userIcon">
+                    
+                </div>
+                <div class="Username">
+                    <h7>Mark</h7>
+                </div>
+                <div class="trophy">
+                    <i class="fa-solid fa-trophy"></i>
+                </div>
+                <div class="points">
+                    <h8>5000</h8>
+                </div>
+            </div>
+            <div class="topCard">
+                <div class="userIcon">
+                    
+                </div>
+                <div class="Username">
+                    <h7>Larry</h7>
+                </div>
+                <div class="trophy">
+                    <i class="fa-solid fa-trophy"></i>
+                </div>
+                <div class="points">
+                    <h8>4888</h8>
+                </div>
+            </div>
+        </div>
+        <div class="placement">
+            <div class="placementText">
+                <h18>You are ranked <span>600</span> out of 20000 users</h18>
+            </div>
+        </div>
+        <div class="table2">
+            <div class="tableHead">
+                <div>Place</div>
+                <div>Username</div>
+                <div>Points</div>
+            </div>
+            <div class="tableRow show">
+                <div><i class="fa-solid fa-trophy"></i> 1</div>
+                <div>Mark</div>
+                <div>5000</div>
+            </div>
+            <div class="tableRow show">
+                <div><i class="fa-solid fa-trophy"></i> 2</div>
+                <div>Jacob</div>
+                <div>4999</div>
+            </div>
+            <div class="tableRow show">
+                <div><i class="fa-solid fa-trophy"></i> 3</div>
+                <div>Larry</div>
+                <div>4998</div>
+            </div>
+        </div>
+        <!-------------------- Footer ---------------------------------------->
+        <div class="footer">            
+            <ul class="navbar-header">
+                <li>
+                    <div class="menuItem">
+                        <a href="index.html"><p><i class="fa-solid fa-house"></i></p>Home</a>                                                
+                    </div>
+                </li>
+                <li>
+                    <div class="menuItem">
+                        <a href="exchange.html"><p><i class="fa-solid fa-rotate"></i></p>Exchange</a>                                                
+                    </div>
+                </li>
+                <li>
+                    <div class="menuItem">
+                        <a href="market.html"><p><i class="fa-solid fa-shop"></i></p>Market</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="menuItem">
+                        <a href="leaderboard.html"><p><i class="fa-solid fa-trophy"></i></p>Leaderboard</a>                        
+                    </div>
+                </li>
+                <li>
+                    <div class="menuItem">
+                        <a href="#hero"><p><i class="fa-solid fa-user"></i></p>Profile</a>                        
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--------------------------- End Footer --------------------------------------------->
+        </main>
+    </body>
+    <script>
+        window.addEventListener('scroll', function() {
+        var table = document.querySelector('.table2');
+        var rows = table.querySelectorAll('.tableRow');
+        var lowestRow = rows[rows.length - 1];
+        var lowestRowRect = lowestRow.getBoundingClientRect();
+        if (lowestRowRect.bottom <= window.innerHeight) {
+            var newRow = document.createElement('div');
+            newRow.classList.add('tableRow');
+            var trophyNum = rows.length + 1;
+            var point = 5000 - trophyNum;
+            newRow.innerHTML = `
+            <div><i class="fa-solid fa-trophy"></i> ${trophyNum}</div>
+            <div>User</div>
+            <div>${point}</div>
+            `;
+            table.appendChild(newRow);
+            // Trigger the animation
+            setTimeout(function() {
+            newRow.classList.add('show');
+            }, 0);
+        }
+        });
+    </script>
+</html>

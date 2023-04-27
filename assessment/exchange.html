@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@6.2.0/css/mdb.min.css" />       
+        <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@6.2.0/js/mdb.min.js"></script>
+
+        <title>Take Home Assessment</title>
+    </head>
+    <body class="exchangeBody">
+        <main>
+        <div class="header">
+            <div><h1>Exchange</h1></div>            
+        </div>
+        <div class="balance">
+            
+            <div class="balanceCard">
+                <h2>Available Balance</h2>
+                <div class="balanceItems">
+                    <div class="egg">
+                        <h1>100.11 WC Eggs</h1>
+                    </div>
+                    <div class="egg">
+                        <h1>100.16 USDT</h1>
+                    </div>
+                    <div class="buttons2">
+                        <button class="btn depositButton btn-success">Deposit</button>
+                        <button class="btn withdrawButton btn-warning">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="order">
+            
+            <div class="orderCardLeft">
+                <form class="orderInput">                    
+                    <select class="form-control">
+                        <option>Limit Order</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <input type="text" class="form-control" id="inputEmail4" placeholder="Price(USDT)">
+                    <input type="text" class="form-control" id="inputEmail4" placeholder="Amount">
+                    <input type="text" class="form-control" id="inputEmail4" placeholder="Sell Transaction Fee">
+                    <input type="text" class="form-control" id="inputEmail4" placeholder="Total">
+                </form>
+                <div class="buttons">
+                    <button class="btn buySell btn-success">BUY</button>
+                    <button class="btn buySell btn-danger">SELL</button>
+                </div>
+            </div>
+            
+            <div class="orderCardRight">
+                <h3>Transaction History</h3>
+                <table class="table">                    
+                    <div class="table3">
+                        <div class="tableHead">
+                            <div>Price<br>(USDT)</div>
+                            <div>Amount<br>(WC Eggs)</div>
+                            <div>Date</div>
+                            <div>Action</div>
+                            <div>Balance<br>(WC Eggs)</div>
+                        </div>
+                        <div class="tableRow2 sell">
+                            <div>3.56451</div>
+                            <div>111.654</div>
+                            <div>4/25/23</div>
+                            <div>Sell</div>
+                            <div>129.616</div>
+                        </div>
+                        <div class="tableRow2 sell">
+                            <div>3.54962</div>
+                            <div>112.97</div>
+                            <div>4/25/23</div>
+                            <div>Sell</div>
+                            <div>241.27</div>
+                        </div>
+                        <div class="tableRow2 buy">
+                            <div>3.54564</div>
+                            <div>145.87</div>
+                            <div>4/25/23</div>
+                            <div>Buy</div>
+                            <div>354.24</div>
+                        </div>
+                        <div class="tableRow2 buy">
+                            <div>3.58434</div>
+                            <div>23.968</div>
+                            <div>4/25/23</div>
+                            <div>Buy</div>
+                            <div>208.37</div>
+                        </div>
+                        <div class="tableRow2 sell">
+                            <div>3.53870</div>
+                            <div>34.888</div>
+                            <div>4/25/23</div>
+                            <div>Sell</div>
+                            <div>184.402</div>
+                        </div>
+                        <div class="tableRow2 sell">
+                            <div>3.57789</div>
+                            <div>21.454</div>
+                            <div>4/24/23</div>
+                            <div>Sell</div>
+                            <div>219.29</div>
+                        </div>
+                        <div class="tableRow2 sell">
+                            <div>3.56352</div>
+                            <div>10.67</div>
+                            <div>4/24/23</div>
+                            <div>Sell</div>
+                            <div>240.744</div>
+                        </div>
+                        <div class="tableRow2 buy">
+                            <div>3.57219</div>
+                            <div>50.744</div>
+                            <div>4/23/23</div>
+                            <div>Buy</div>
+                            <div>251.414</div>
+                        </div>
+                        <div class="tableRow2 buy">
+                            <div>3.59994</div>
+                            <div>200.67</div>
+                            <div>4/23/23</div>
+                            <div>Buy</div>
+                            <div>200.67</div>
+                        </div>
+                    </div>                      
+                </table>
+            </div>
+        </div>
+        <div class="chart">
+            <canvas id="lineChart"></canvas>
+        </div>
+        <!-------------------- Footer ---------------------------------------->
+        <div class="footer">            
+            <ul class="navbar-header">
+                <li>
+                    <div class="menuItem">
+                        <a href="index.html"><p><i class="fa-solid fa-house"></i></p>Home</a>                                                
+                    </div>
+                </li>
+                <li>
+                    <div class="menuItem">
+                        <a href="#hero"><p><i class="fa-solid fa-rotate"></i></p>Exchange</a>                                                
+                    </div>
+                </li>
+                <li>
+                    <div class="menuItem">
+                        <a href="market.html"><p><i class="fa-solid fa-shop"></i></p>Market</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="menuItem">
+                        <a href="leaderboard.html"><p><i class="fa-solid fa-trophy"></i></p>Leaderboard</a>                        
+                    </div>
+                </li>
+                <li>
+                    <div class="menuItem">
+                        <a href="#hero"><p><i class="fa-solid fa-user"></i></p>Profile</a>                        
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--------------------------- End Footer --------------------------------------------->
+        </main>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.2/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@6.2.0/js/mdb.min.js"></script>
+    <script>
+        //line
+        var ctxL = document.getElementById("lineChart").getContext('2d');
+        var myLineChart = new Chart(ctxL, {
+        type: 'line',
+        data: {
+            labels: ["January", "February", "March", "April", "May", "June", "July"],
+            datasets: [
+            {
+            label: "WC Egg",
+            data: [28, 48, 40, 19, 86, 27, 90],
+            backgroundColor: [
+                'rgba(0, 137, 132, .2)',
+            ],
+            borderColor: [
+                '#0cf809',
+            ],
+            borderWidth: 2
+            }
+            ]
+        },
+        options: {
+            responsive: true
+        }
+        });
+    </script>
+</html>
