@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/icon.webp" type="image/icon type">
+    <meta name="title" content="GBET.COM - Your Ultimate Online Gaming Destination">
+    <meta name="description" content="Explore a world of thrilling online games and exciting betting opportunities at GBET.COM. Join us for an immersive gaming experience and unlock a world of entertainment today!">
+    <title>GBET Website Links</title>
+</head>
+<body>
+    <div class="main">
+        <img class="desktopBackground" src="images/background.webp">
+        <img class="mobileBackground" src="images/mobile background.webp">
+        <div class="container">
+            <div class="logo">
+                <div class="iconContainer"><img src="images/icon.webp"></div>
+                <img src="images/logo.webp">
+            </div>
+            <div class="tableContainer">
+                <div class="tableHeader">
+                    <div class="tableData">WEBSITE</div>
+                    <div class="tableData">PING</div>
+                    <div class="tableData">STATUS</div>
+                    <div class="tableData move expand">LINK</div>
+                </div>
+                <div class="tableRows">
+                    <div class="tableData">Link 1</div>
+                    <div class="green tableData">7ms</div>
+                    <div class="green tableData">Online</div>
+                    <div class="tableData expand entrance"><strong>[Click to Enter]</strong></div>
+                    <div class="leftHand"><img src="images/left_hand.webp"></div>
+                    <div class="rightHand"><img src="images/right_hand.webp"></div>
+                </div>
+                <div class="tableRows">
+                    <div class="tableData">Link 2</div>
+                    <div class="yellow tableData">95ms</div>
+                    <div class="yellow tableData">Weak</div>
+                    <div class="tableData expand entrance"><strong>[Click to Enter]</strong></div> 
+                    <div class="leftHand"><img src="images/left_hand.webp"></div>
+                    <div class="rightHand"><img src="images/right_hand.webp"></div>
+                </div>
+                <div class="tableRows">
+                    <div class="tableData">Link 3</div>
+                    <div class="red tableData">305ms</div>
+                    <div class="red tableData">Offline</div>
+                    <div class="tableData expand entrance"><strong>[Click to Enter]</strong></div> 
+                    <div class="leftHand"><img src="images/left_hand.webp"></div>
+                    <div class="rightHand"><img src="images/right_hand.webp"></div>
+                </div>
+                <div class="tableRows">
+                    <div class="tableData">Link 4</div>
+                    <div class="green tableData">7ms</div>
+                    <div class="green tableData">Online</div>
+                    <div class="tableData expand entrance"><strong>[Click to Enter]</strong></div> 
+                    <div class="leftHand"><img src="images/left_hand.webp"></div>
+                    <div class="rightHand"><img src="images/right_hand.webp"></div>
+                </div>
+                <div class="tableRows">
+                    <div class="tableData">Link 5</div>
+                    <div class="yellow tableData">120ms</div>
+                    <div class="yellow tableData">Online</div>
+                    <div class="tableData expand entrance"><strong>[Click to Enter]</strong></div> 
+                    <div class="leftHand"><img src="images/left_hand.webp"></div>
+                    <div class="rightHand"><img src="images/right_hand.webp"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let leftHand = document.querySelectorAll(".leftHand")
+    let rightHand = document.querySelectorAll(".rightHand")
+
+    setInterval(() => {
+        leftHand.forEach(element => {
+            element.classList.toggle("moveLeft")
+        })
+        rightHand.forEach(element => {
+            element.classList.toggle("moveRight")
+        })
+    }, 500)
+
+</script>
+</html>
