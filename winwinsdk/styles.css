@@ -1,0 +1,652 @@
+@font-face {
+    font-family: 'Helvetica';
+    src: url('fonts/Helvetica.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Helvetica-Bold';
+    src: url('fonts/Helvetica-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+a {
+    text-decoration: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+    color: #5f6c7b;
+    font-family: 'Helvetica', sans-serif;
+    background-color: #B5C4FF;
+    line-height: 5vw;
+    overflow-x: hidden;
+}
+
+img {
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-drag: none;
+    -webkit-user-drag: none; 
+}
+
+
+.header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 3vw 6vw;
+    align-items: center;
+    width: calc(100% - 12vw);
+    height: 12vw;
+    box-shadow: 0px 1px 7px #EAEDF5;
+}
+
+.divContainer {
+    padding: vw;
+    background-color: #F6F8FF;
+    padding: 3vw;
+    border-radius: 2vw;
+    position: relative;
+}
+.divTopContainer {
+    position: absolute;
+    top: 0;
+    height: 10vw;
+    width: 93%;
+    background-image: url('images/Divtop.webp');
+    background-position-x: center;
+    background-size: 70vw;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+    font-size: 4.5vw;
+}
+.logo {
+    width: 38vw;
+}
+.registerButton {
+    background-color: #FD6914;
+    height: 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vw;
+    border-radius: 9vw;
+    width: 27vw;
+    font-size: 4vw;
+    font-weight: bold;
+    color: white;
+}
+
+.banner img {
+    width: 100%;
+}
+.steps {
+    padding: 1.5vw 3vw;
+}
+.stepsTitle {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    padding: 4vw 0;
+    font-size: 5vw;
+    color: #1f1235;
+}
+.stepsDescription {
+    font-size: 3.5vw;
+    text-align: justify;
+    line-height: 5vw;
+    color: #1b1425;
+}
+.steps1to3 {
+    position: relative;
+    margin-top: 5vw;
+}
+.stepsImg {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.stepsTexts {
+    display: flex;
+    justify-content: space-between;
+    font-size: 3.5vw;
+    align-items: center;
+    height: 8vw;
+    padding: 0 2vw;
+    background-image: url('images/编组 11@3x.webp');
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 2vw;
+}
+span {
+    color: #3E68D7;
+}
+.stepsTexts span {
+    color: #e2daeb;
+}
+.stepsText {
+    color: white;
+    font-weight: bold;
+}
+.stepsButton {
+    background-color: #EB7233;
+    font-size: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vw;
+    height: 10vw;
+    font-weight: bold;
+    color: white;
+}
+.credentials {
+    padding: 1.5vw 3vw;
+    background-color: #B5C4FF;
+    background-size: cover;
+    background-position: center;
+
+}
+.iconsContainer {
+    display: flex;
+    justify-content: space-between;
+}
+.credentialIcons {
+    border: 1px solid #206CEA;
+    width: 26vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3.5vw;
+    padding: 2vw 0;
+    margin-bottom: 4vw;
+    color: #333333;
+    background-color: #E1EAFF;
+}
+.credentialIcons img {
+    height: 13vw;
+    margin-top: 4vw;
+}
+.credentialIcons div {
+    margin-bottom: 2vw;
+}
+.credentialsDescription {
+    font-size: 3.5vw;
+    text-align: justify;
+    color: #333333;
+}
+.agentsBenefit {
+    padding: 1.5vw 3vw;
+}
+.agentsBenefitTitle {
+    display: flex;
+    justify-content: center;
+    font-size: 5vw;
+    font-weight: bold;
+    margin-bottom: 12vw;
+    margin-top: 1vw;
+    color: #1f1135;
+}
+.benefitsContents {
+    display: flex;
+    gap: 4vw;
+    margin-bottom: 10vw;
+}
+.number {
+    background-color: #D1F0FE;
+    height: 14vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 14vw;
+    border-radius: 7vw;
+    font-size: 5vw;
+    font-weight: bold;
+    font-style: italic;
+}
+.number span {
+    color: #3E68D7;
+}
+.rightTitle {
+    font-size: 5vw;
+    font-weight: bold;
+    margin-bottom: 1vw;
+    color: #1f1235;
+}
+.rightDescription {
+    font-size: 3.5vw;
+    text-align: justify;
+    color: #1b1425;
+}
+.agentsBenefit2 {
+    background-color: #B5C4FF;
+    padding: 1.5vw 3vw;
+}
+.agentsBenefitSubtitle {
+    font-size: 3.75vw;
+    font-weight: bold;
+    margin-bottom: 5vw;
+    text-align: justify;
+    color: #1f1135;
+}
+.benefit2Description {
+    font-size: 3.5vw;
+    text-align: justify;
+    margin-bottom: 5vw;
+    color: #1b1325;
+}
+.benefit2Description strong {
+    color: #1f1135;
+}
+.benefitImg {
+    width: 100%;
+}
+.commission {
+    padding: 1.5vw 3vw;
+}
+.commissionTitle {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 5vw;
+    margin-bottom: 7vw;
+    margin-top:3vw;
+    color: #1f1235;
+}
+.commissionCard {
+    background-color: white;
+    height: 55vw;
+    border-radius: 2vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3vw;
+    border: 1px solid #5380D5;
+}
+.commissionCard:nth-child(5) {
+    margin-bottom: 0vw;
+}
+.commissionCardTop {
+    position: relative;
+    height: 19vw;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 6vw;
+    margin-bottom: 2vw;
+    color: #FFFFFF;
+}
+.commissionCardTopBG {
+    position: absolute;
+    top: 0;
+    left: 24vw;
+    background-color: #5380D5;
+    height: 20vw;
+    width: 40vw;
+    border-bottom-left-radius: 25vw;
+    border-bottom-right-radius: 25vw;
+    transform: scaleX(2.5);
+    z-index: -1;
+}
+.bottomTitle {
+    font-size: 4.5vw;
+    font-weight: bold;
+    justify-content: center;
+    margin-top: 3vw;
+    margin-bottom: 6vw;
+    text-align: center;
+}
+.bottomTitle span {
+    color: #494FDE;
+}
+.bottomDescription {
+    color: #48485D;
+    font-size: 3.5vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3vw;
+}
+.commissionTitle2 {
+    font-size: 3.75vw;
+    font-weight: bold;
+    margin-bottom: 3vw;
+    color: #334E9B;
+}
+.commissionDescription {
+    font-size: 3.5vw;
+    margin-bottom: 4vw;
+    text-align: justify;
+    color: #1b1425;
+}
+.contact {
+    padding: 1.5vw 3vw;
+    padding-bottom: 3vw;
+}
+.contactTitle {
+    font-size: 5vw;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+    margin-top: 2vw;
+    margin-bottom: 9vw;
+    color: #1f1235;
+}
+.contactDescription {
+    font-size: 3.5vw;
+    text-align: justify;
+    margin-bottom: 4vw;
+    color: #1b1425;
+}
+.contactContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4vw;
+}
+.contactContainer:nth-child(5) {
+    margin-bottom: 6vw;
+}
+.contactIcon {
+    display: flex;
+    align-items: center;
+}
+.contactIcon img {
+    width: 7vw;
+    margin-right: 2vw;
+}
+.contactText {
+    font-size: 3.5vw;
+    color: #1b1425;
+}
+.contactRegisterButton {
+    width: 100%;
+    background-color: #5380D5;
+    height: 12vw;
+    display: flex;
+    font-size: 4vw;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5vw;
+    margin-bottom: 2vw;
+}
+.marginBottomZero {
+    margin-bottom: 0;
+}
+.desktopBanner {
+    display: none;
+}
+.credentialTexts {
+    text-align: center
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-color: #F2F5FF;
+    }
+    .header {
+        padding: 1vw 16vw;
+        width: calc(100% - 32vw);
+        height: 3vw;
+    }
+    .logo {
+        width: 12vw;
+    }
+    .banner {
+        display: none;
+    }
+    .desktopBanner {
+        width: calc(100% - 32vw);
+        padding: 1vw 16vw;
+        padding-bottom: 0.5vw;
+        display: block;
+    }
+    .desktopBanner img {
+        width: 100%;
+    }
+    .divTopContainer {
+        font-size: 1.2vw;
+        height: 3vw;
+        background-size: 20vw;
+    }
+    .divContainer {
+        border: 1.5px solid #DFE0DF;
+        border-radius: 1vw;
+        background-color: white;
+        padding: 2vw 3vw;
+    }
+    .steps {
+        padding: 0.5vw 16vw;
+        padding-top: 0vw;
+        margin-top: -1vw;
+    }
+    .stepsDescription {
+        font-size: 1vw;
+        line-height: 1.5vw;
+    }
+    .stepsTitle {
+        padding: 1vw 0;
+    }
+    .stepsContainer {
+        display: flex;
+        padding: 0 2vw;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2vw;
+    }
+    .stepsTexts {
+        font-size: 1.2vw;
+        height: 3vw;
+        width: 35vw;
+        padding: 0 1vw;
+        border-radius: 0;
+        background-size: cover;
+        background-position: bottom;
+    }
+    .steps1to3 {
+        margin-top: 0vw;
+    }
+    .stepsButton {
+        font-size: 1.2vw;
+        margin-top: 0vw;
+        height: 3vw;
+        padding: 0 4vw;
+    }
+    .credentials {
+        padding: 0.5vw 16vw;
+        background-color: transparent;
+    }
+    .credentialIcons {
+        font-size: 1vw;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0 4vw;
+        align-items: center;
+        width: 7vw;
+        height: 6vw;
+        gap: 1.5vw;
+        margin-bottom: 2vw;
+    }
+    
+    .credentialIcons div {
+        margin-bottom: 0vw;
+    }
+    /* .credentialTexts div {
+        height: 2.5vw;
+    } */
+    .iconsContainer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 6vw;
+    }
+    .credentialIcons img {
+        height: 2.5vw;
+        margin-top: 0vw;
+    }
+    .iconImageContainer {
+        display: flex;
+        align-items: center;
+    }
+    .credentialTexts {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 1.5vw;
+    }
+    .credentialsDescription {
+        font-size: 1vw;
+        line-height: 1.5vw;
+    }
+    .agentsBenefit {
+        padding: 0.5vw 16vw;
+    }
+    .number {
+        height: 2.5vw;
+        width: 2.5vw;
+        font-size: 1.2vw;
+    }
+    .rightTitle {
+        font-size: 1.2vw;
+        line-height: 1.5vw;
+        margin-bottom: 0vw;
+    }
+    .rightDescription {
+        font-size: 1vw;
+        line-height: 1.5vw;
+    }
+    .benefitsContents {
+        gap: 2vw;
+        margin-bottom: 1.5vw;
+    }
+    .agentsBenefitTitle {
+        margin-bottom: 3vw;
+        margin-top: 0vw;
+    }
+    .agentsBenefitSubtitle {
+        font-size: 1.2vw;
+        line-height: 1.5vw;
+        margin-bottom: 1.5vw;
+    }
+    .benefit2Description {
+        font-size: 1vw;
+        line-height: 1.5vw;
+        margin-bottom: 1.5vw;
+    }
+    .agentsBenefit2 {
+        background-color: transparent;
+        padding: 0.5vw 16vw;
+    }
+    .commission {
+        padding: 0.5vw 16vw;
+    }
+    .commissionTitle {
+        margin-bottom: 0vw;
+    }
+    .commissionCardTop {
+        font-size: 1.2vw;
+        height: 4vw;
+    }
+    .bottomTitle {
+        font-size: 1vw;
+        line-height: 1.5vw;
+        margin-top: 0vw;
+        margin-bottom: 0vw;
+    }
+    .commissionCardBottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 11vw;
+        padding-bottom: 1vw;
+    }
+    .bottomDescription {
+        font-size: 1vw;
+        line-height: 1.5vw;
+        margin-bottom: 0vw;
+    }
+    .commissionCards {
+        display: flex;
+        justify-content: space-between;
+    }
+    .commissionCard {
+        height: 12vw;
+        width: 19.5vw;
+        border-radius: 0.5vw;
+        margin-bottom: 0;
+    }
+    .commissionCardTopBG {
+        top: -15.5vw;
+        left: -10vw;    
+        height: 20vw;
+        width: 40vw;
+        transform: scaleX(1.24);
+    }
+    .commissionTitle2 {
+        font-size: 1vw;
+        margin-bottom: 0vw;
+        line-height: 1.5vw;
+    }
+    .commissionDescription {
+        font-size: 1vw;
+        margin-bottom: 1.2vw;
+        line-height: 1.5vw;
+        text-align: justify;
+        color: #1b1425;
+    }
+    .contact {
+        padding: 0.5vw 16vw;
+        padding-bottom: 1vw;
+    }
+    .contactDescription {
+        font-size: 1vw;
+        line-height: 1.5vw;
+        margin-bottom: 0vw;
+    }
+    .contactTitle {
+        margin-top: 0vw;
+        margin-bottom: 2vw;
+    }
+    .contactIcon img {
+        width: 2vw;
+        margin-right: 0.5vw;
+    }
+    .contactText {
+        font-size: 1vw;
+    }
+    .socialmedias {
+        display: flex;
+        justify-content: space-between;
+        height: 3vw;
+    }
+    .contactContainer {
+        margin-bottom: 0vw;
+    }
+    .benefitImg {
+        width: 34%;
+        position: absolute;
+        top: 21vw;
+        left: 41vw;
+    }
+    .mobileCompress {
+        width: 36vw;
+    }
+    .marginBottomZeroMobile {
+        margin-bottom: 0;
+    }
+    .moveMobile {
+        transform: translateX(-1.5vw);
+    }
+}
